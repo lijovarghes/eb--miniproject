@@ -1,0 +1,29 @@
+.b{
+    background: linear-gradient(90deg, #d899dc, #42ce99);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    
+    }
+    a{
+        color: rgb(138, 23, 23);
+        font-size: large;
+        text-decoration: none;
+       text-align: center;
+    }
+    .c{
+        text-align: center;
+    }
+
+    h6{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        font-size: large;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+       
+    }
+    u{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(46, 44, 44);
+       }

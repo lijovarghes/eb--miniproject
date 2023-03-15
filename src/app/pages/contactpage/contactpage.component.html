@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <form #f="ngForm" (ngSubmit)="addData(f)">
+      <div class="field">
+        <input type="text" id="name" name="name" placeholder="Enter your name?" autofocus [(ngModel)]="name">
+        <label for="name">Name</label>
+      </div>
+      <div class="field">
+        <input type="text" id="address" name="phone" placeholder="Enter your phone num?" autofocus [(ngModel)]="phone">
+        <label for="name">Phone no</label>
+      </div>
+      <div class="field">
+        <input type="text" id="email" name="email" placeholder="name@domain.com"  [(ngModel)]="email">
+        <label for="email">E-Mail</label>
+      </div>
+      <div class="field">
+        <textarea id="msg" rows="4" name="msg" placeholder="You message..." ngModel></textarea>
+        <label for="msg">Message</label>
+      </div>
+      <input class="button" type="submit" value="Send" >
+    </form>
+  
+  </div><br><br><br>
+  <section class="map_sec">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <div class="map_inner">
+          <h4>Find Us On Map</h4>
+          <div class="map_bind">
+   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js" style="background-color: aliceblue;"></script> 
+  <!-- Google Map Copied Code -->
+  <iframe id="o" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.5465587645863!2d76.5824918137839!3d9.373332193282444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06247260536859%3A0x47b80c2e1ce414bd!2sMACFAST%20%7C%20Tiruvalla!5e0!3m2!1sen!2sin!4v1676302386207!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div></div></div></div></div></section>
+

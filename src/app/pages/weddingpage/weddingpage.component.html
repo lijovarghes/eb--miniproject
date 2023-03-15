@@ -1,0 +1,24 @@
+<div class="container" ><br>
+    <div class="row"><br>
+    <div class="col" *ngFor="let i of ebs"><br>
+        <article class="card" style="width: 20rem; height: 440px;">
+    <img
+      class="card__background"
+      src="../../assets/images/{{i.Image2}}"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920" height="2193"/>
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">{{i.name2}}</h2>
+        <p class="card__description">
+           {{i.desc2}}
+        </p>
+        <p class="card__description">
+          {{i.rat3}}
+       </p>
+       <p class="card__description">
+        {{i.cost3}}
+     </p>
+      </div>
+      <button class="card__button" (click)="gotohere(i.id)">Read more</button>
+    </div></article>
+  

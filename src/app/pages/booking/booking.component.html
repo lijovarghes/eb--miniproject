@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Taxi Booking Form</title>
+</head>
+
+<br><br>
+<h2>Book Now!!</h2><br>
+<div >
+  <div>
+    <div class="container1">
+      <form #f="ngForm" (ngSubmit)="addData(f)">
+      
+        
+            <!-- <p>Personal Details</p> --><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required ngModel>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required ngModel>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone" required ngModel>
+   
+              <p>Booking Details</p>
+			  <div class="row">
+			  
+              <div class="col-50">
+			  
+                <label for="time">Pick up(date and time):</label>
+				<input type="datetime-local" id="time" name="time" required ngModel>
+				                <label for="event">Choose Event:</label>
+                <select name="event" id="event" ngModel>
+                  <option value="Music">Music</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Dj">DJ</option>
+                   <option value="Bus"></option> 
+                </select>
+				
+              </div>
+            
+              <div class="col-50">
+
+				<label for="bandname">Band name</label>
+                <input type="name" id="passenger" name="event band/planner name" required ngModel>
+              </div>
+            </div>     
+			 
+        <div class="row">
+          <div class="col-50">
+            <p>Permanent Address</p>
+             <label for="pstreet">Street</label>
+              <input type="text" id="pstreet" name="pstreet" required ngModel>
+              <label for="pcity">City</label>
+              <input type="text" id="pcity" name="pcity" required ngModel>
+              <label for="pstate">State</label>
+              <input type="text" id="pstate" name="pstate" required ngModel>
+              <label for="pzipcode">Zip Code</label>
+              <input type="number" id="pzipcode" name="pzipcode" required ngModel>
+          
+          </div>
+         
+          </div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" style="height:100px"  ngModel ></textarea>  
+			
+        <input type="submit" value="Confirm Booking" class="btn" >
+      </form>
+    </div>
+  </div>
+
+

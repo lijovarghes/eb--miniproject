@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ebsmini-2a9cb": {
+      "hosting": {
+        "ems": [
+          "ebsmini-2a9cb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ebsmini-2a9cb"
+  }
+}

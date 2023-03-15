@@ -1,0 +1,38 @@
+<!-- <div class="container" ><br>
+    <div class="row"><br>
+    <div class="col" *ngFor="let i of artforms"><br>
+
+<div class="card" style="width: 18rem; height: 425px;">
+ 
+    <img src="../../assets/images/{{i.Image}}" class="card-img-top" alt="..." height="250px">
+    <div class="card-body"  >
+      <h5 class="card-title">{{i.name}}</h5>
+      <p class="card-text">{{i.desc}}</p>
+      <button (click)="gotohere(i.id)" style="background-color: rgba(217, 213, 229, 0.961);"> Read more-</button> 
+   
+    </div>
+  </div> -->
+  <div class="container" ><br>
+    <div class="row"><br>
+    <div class="col" *ngFor="let i of ebs"><br>
+        <article class="card" style="width: 20rem; height: 440px;">
+    <img
+      class="card__background"
+      src="../../assets/images/{{i.Image}}"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920" height="2193"/>
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">{{i.name}}</h2>
+        <p class="card__description">
+           {{i.desc}}
+        </p>
+        <p class="card__description">
+          {{i.rat}}
+       </p>
+       <p class="card__description">
+        {{i.cost}}
+     </p>
+      </div>
+      <button class="card__button" (click)="gotohere(i.id)">Read more</button>
+    </div></article>
+  
