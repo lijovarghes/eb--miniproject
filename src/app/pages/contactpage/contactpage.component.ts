@@ -10,10 +10,15 @@ export class ContactpageComponent {
   email : string  ='' ;
   name : string  ='' ;
   phone : string  ='' ;
+  message : string  ='' ;
   constructor(private router:Router,private firestore:Firestore){}
   
   addData(f:any)
   {
+    if(this.name == ''){
+      alert('please enter name')
+      return;
+    }
     if(this.email == ''){
       alert('please enter email')
       return;
@@ -22,8 +27,8 @@ export class ContactpageComponent {
       alert('please enter phone no')
       return;
     }
-    if(this.name == ''){
-      alert('please enter name')
+    if(this.message == ''){
+      alert('please enter message')
       return;
     }
     const collectionInstance =collection(this.firestore,'userscontact');

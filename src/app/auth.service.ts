@@ -45,4 +45,14 @@ export class AuthService {
   //   const bookingCollection=collection(this.fires,'booking');
         
   // }
-}
+
+logout(){
+  this.fireauth.signOut().then( () => {
+    localStorage.removeItem('token');
+    // alert('logout successful');
+    this.router.navigate(['']);
+  }, err => {
+    alert(err.message);
+  })
+}}
+

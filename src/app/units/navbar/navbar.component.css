@@ -3,8 +3,9 @@ a:hover{
    
    }
    .container-fluid{
-      height: 60px;
-      
+       /* height: 60px;  */
+      padding-bottom: 8px;
+      padding-top: 8px;
       font-size: large;
       font-style: oblique;
       align-content: center;
@@ -20,7 +21,7 @@ a:hover{
       background:linear-gradient(90deg, #d71d67, #0abc87);
    }
    .nav-link{
-      font-size: 20px;
+      font-size: 20.1px;
       font-style: italic;
       font-weight: bold;
       color: #080808d9;

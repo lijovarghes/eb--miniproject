@@ -13,7 +13,7 @@
         <label for="email">E-Mail</label>
       </div>
       <div class="field">
-        <textarea id="msg" rows="4" name="msg" placeholder="You message..." ngModel></textarea>
+        <textarea id="msg" rows="4" name="msg" placeholder="You message..." [(ngModel)]="message"></textarea>
         <label for="msg">Message</label>
       </div>
       <input class="button" type="submit" value="Send" >

@@ -27,7 +27,10 @@ import { Router } from '@angular/router';
 
  ngOnInit(): void {
  }
-
+ signup(){
+  this.auth.logout();
+  alert('logout successful')
+}
  Signinpage(){
    if(this.email == ''){
      alert('please enter email')

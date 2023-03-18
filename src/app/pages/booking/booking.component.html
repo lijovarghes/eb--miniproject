@@ -16,21 +16,21 @@
         
             <!-- <p>Personal Details</p> --><br>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required ngModel>
+            <input type="text" id="name" name="name" required [(ngModel)]="name" >
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required ngModel>
+            <input type="email" id="email" name="email" required [(ngModel)]="email">
             <label for="phone">Phone</label>
-            <input type="number" id="phone" name="phone" required ngModel>
+            <input type="number" id="phone" name="phone" required [(ngModel)]="phone">
    
               <p>Booking Details</p>
 			  <div class="row">
 			  
               <div class="col-50">
 			  
-                <label for="time">Pick up(date and time):</label>
-				<input type="datetime-local" id="time" name="time" required ngModel>
+                <label for="time">Event (date and time):</label>
+				<input type="datetime-local" id="time" name="time" required [(ngModel)]="time">
 				                <label for="event">Choose Event:</label>
-                <select name="event" id="event" ngModel>
+                <select name="event" id="event" [(ngModel)]="event">
                   <option value="Music">Music</option>
                   <option value="Wedding">Wedding</option>
                   <option value="Dj">DJ</option>
@@ -41,22 +41,22 @@
             
               <div class="col-50">
 
-				<label for="bandname">Band name</label>
+				<label for="bandname">Band/company name</label>
                 <input type="name" id="passenger" name="event band/planner name" required ngModel>
               </div>
             </div>     
-			 
+            
         <div class="row">
           <div class="col-50">
             <p>Permanent Address</p>
              <label for="pstreet">Street</label>
-              <input type="text" id="pstreet" name="pstreet" required ngModel>
+              <input type="text" id="pstreet" name="street" required [(ngModel)]="street">
               <label for="pcity">City</label>
-              <input type="text" id="pcity" name="pcity" required ngModel>
+              <input type="text" id="pcity" name="city" required ngModel>
               <label for="pstate">State</label>
-              <input type="text" id="pstate" name="pstate" required ngModel>
+              <input type="text" id="pstate" name="state" required ngModel>
               <label for="pzipcode">Zip Code</label>
-              <input type="number" id="pzipcode" name="pzipcode" required ngModel>
+              <input type="number" id="pzipcode" name="zipcode" required ngModel>
           
           </div>
          
